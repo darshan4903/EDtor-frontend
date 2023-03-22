@@ -1,0 +1,23 @@
+.App-Head{
+  margin: auto;
+  height: 1000px;
+  width: 1000px;
+
+  text-align: left;
+}
+.App{
+  background-color: black;
+  color: thistle;
+  text-align: center;
+  font-size: large;
+}
+.App-Btn{
+  background-color: green;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  top: 5%;
+  box-shadow: inset;
+}

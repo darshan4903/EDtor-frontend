@@ -1,0 +1,72 @@
+.App-Head{
+    margin: auto;
+    height: 60vh;
+    width: 100%;
+    text-align: left;
+  }
+  .App{
+    background-color: black;
+    color: thistle;
+    text-align: center;
+    font-size: large;
+    height: 100vh;
+  }
+  .App-Btn{
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    top: 100%;
+    margin: 10vh;
+   
+    box-shadow: inset;
+    z-index: 100;
+  }
+  .App-input{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 50%;
+
+    padding: 0;
+    margin: 0%;
+  }
+  .App-subheading1{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+  
+    margin: 0%;
+    padding: auto;
+    width: 50%;
+  }
+  .App-subheading2{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+    width: 50%;
+  }
+.App-Compilation-Parent{
+  flex-direction: left;
+  margin-right: 0;
+  padding: 0;
+}
+
+.App-sub-Parent{
+  display: flex;
+}
+.App-input-Parent{
+  flex-direction: right;  
+}
+  .compilation-box{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    width: 50%;
+  
+    padding: 0;
+    margin: 0%;;
+  }
