@@ -81,6 +81,7 @@ const Room = () => {
 
   const sendFinalDetails = async () => {
     try {
+      setStatus("Running");
       let data = input;
 
       let base64data = base64_encode(data);
