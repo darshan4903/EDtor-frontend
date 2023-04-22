@@ -1,6 +1,6 @@
 .App-Head{
-    margin: auto;
-    height: 60vh;
+    /* margin: auto; */
+    height: 65vh;
     width: 100%;
     text-align: left;
   }
@@ -9,64 +9,63 @@
     color: thistle;
     text-align: center;
     font-size: large;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    margin: 0;
+    padding: 0;;
   }
   .App-Btn{
     background-color: green;
-    width: 150px;
+    width: 100vw;
     height: 40px;
+    justify-content: space-around;
+    /* text-align: center;
+    font-size: large; */
+    text-align: center;
+    text-decoration: dotted;
+    font-size: larger;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* margin: 10vh; */
+    box-shadow: inset;
+    /* z-index: 100; */
+  }
+  .App-Res-Parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    /* height: 100%;
+    width: 100%; */
+  }
+  .App-Output-status{
+    color: green;
+  }
+  .App-Output{
+    min-height: 10vh;
+    height: max-content;
+    background-color: rgb(59, 58, 58);
+    width: 48vw;
     text-align: center;
     font-size: large;
+    color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    top: 100%;
-    margin: 10vh;
    
-    box-shadow: inset;
-    z-index: 100;
   }
-  .App-input{
-    background-color: black;
-    color: white;
+  .App-Input{
     height: 10vh;
-    width: 50%;
-
+    background-color: rgb(59, 58, 58);
+    width: 48vw;
+    border: 0cap;
+    text-align: center;
+    font-size: large;
     padding: 0;
-    margin: 0%;
-  }
-  .App-subheading1{
-    font-size: 20px;
+    margin: 0;
+    color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    color: white;
-  
-    margin: 0%;
-    padding: auto;
-    width: 50%;
   }
-  .App-subheading2{
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-
-    width: 50%;
-  }
-.App-Compilation-Parent{
-  flex-direction: left;
-  margin-right: 0;
-  padding: 0;
-}
-
-.App-sub-Parent{
-  display: flex;
-}
-.App-input-Parent{
-  flex-direction: right;  
-}
-  .compilation-box{
-    background-color: black;
-    color: white;
-    height: 10vh;
-    width: 50%;
-  
-    padding: 0;
-    margin: 0%;;
-  }
+ 

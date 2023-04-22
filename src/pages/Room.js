@@ -12,10 +12,11 @@ var client = null;
 const Room = () => {
   const params = useParams();
   const [code, setCode] = React.useState("");
-  const [lang, setLang] = React.useState("javascript");
+  const [lang, setLang] = React.useState("c++");
   const [loading, setLoadng] = React.useState(false);
   const [result, setResult] = React.useState("");
   const [input, setInput] = React.useState("1 2");
+  const [status, setStatus] = React.useState("");
 
   const sendMessage = (e) => {
     console.log(e);
@@ -89,7 +90,8 @@ const Room = () => {
         setResult(response.stderr);
       }
       else{
-        setResult(response.status.description+ "\n"+response.stdout);
+        setStatus(response.status.description);
+        setResult(response.stdout);
       }
 
       console.log(response);
@@ -145,11 +147,13 @@ const Room = () => {
           </select>
         </div>
       </div>
+      <div className="App-Head">
       <Editor
-        className="App-Head"
-        height="50vh"
+        
+        height="60vh"
+        padding={0}
         //   fontSize={24}
-        defaultLanguage={"javascript"}
+        defaultLanguage={"C++"}
         language={lang}
         defaultValue="// some comment"
         theme="vs-dark"
@@ -161,25 +165,34 @@ const Room = () => {
           },
         }}
       />
-      <div onClick={sendFinalDetails} className="App-Btn">
-        Submit
       </div>
-      <div className="App-Sub-Parent">
-        <div className="App-Compilation-Parent">
-        <div className="App-subheading2">Output</div>
-        <div className="compilation-box">{result}</div>
+
+      <div className="App-Res-Parent">
+        <div className="App-Out-Parent">
+     
+          <div className="App-subheading-Output">Output</div>
+          <div className="App-Output-status">{status}</div>
+        <div className="App-Output">{result}</div>
+     
+
         </div>
+
+
        <div className="App-Input-Parent">
-       <div className="App-subheading1">INPUT</div>
+       <div className="App-subheading-Input">INPUT</div>
         <textarea
           onChange={(e) => {
             setInput(e.target.value);
           }}
           value={input}
-          className="App-input"
+          className="App-Input"
         />
        </div>
-        
+    
+      </div>
+            
+      <div onClick={sendFinalDetails} className="App-Btn">
+        Submit
       </div>
     </div>
   );
