@@ -15,7 +15,7 @@ const Room = () => {
   const [lang, setLang] = React.useState("c++");
   const [loading, setLoadng] = React.useState(false);
   const [result, setResult] = React.useState("");
-  const [input, setInput] = React.useState("1 2");
+  const [input, setInput] = React.useState();
   const [status, setStatus] = React.useState("");
 
   const sendMessage = (e) => {
@@ -128,23 +128,22 @@ const Room = () => {
             value={lang}
             onChange={(e) => setLang(e.target.value)}
           >
-            <option value="javascript">JavaScript</option>
-            <option value="typescript">TypeScript</option>
-            <option value="css">CSS</option>
-            <option value="html">HTML</option>
-            <option value="json">JSON</option>
-            <option value="markdown">Markdown</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-            <option value="c">C</option>
-            <option value="cpp">C++</option>
-            <option value="csharp">C#</option>
-            <option value="go">Go</option>
-            <option value="kotlin">Kotlin</option>
-            <option value="php">PHP</option>
-            <option value="ruby">Ruby</option>
-            <option value="rust">Rust</option>
-            <option value="scala">Scala</option>
+             <option value="63" >JavaScript</option>
+             <option value="74" >TypeScript</option>
+             <option value="66" >Octave</option>
+             <option value="46" >Bash</option>
+             {/* <option value="json">JSON</option>
+//             <option value="markdown">Markdown</option> */}
+             <option value="70" >Python</option>
+             <option value="91" >Java</option>
+             <option value="50" >C</option>
+             <option value="52" >C++</option>
+             <option value="51" >C#</option>
+             <option value="60" >Go</option>
+             {/* <option value="kotlin">Kotlin</option> */}
+             <option value="68" >PHP</option>
+             <option value="72" >Ruby</option>
+             <option value="73" >Rust</option>
           </select>
         </div>
       </div>
@@ -154,7 +153,7 @@ const Room = () => {
         height="60vh"
         padding={0}
         //   fontSize={24}
-        defaultLanguage={"C++"}
+        // defaultLanguage={"C++"}
         language={lang}
         defaultValue="// some comment"
         theme="vs-dark"

@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import { useNavigate} from 'react';
 import {post} from '../api/methods';
-
+// import {s} from '../pages/home_svg'
 
 
 const Home = () => {
@@ -27,6 +27,7 @@ const Home = () => {
   return (
     <div className='HomeContainer'>
         <div className='HomeTitle'>APNA EDITOR</div>
+        {/* <image src={s} alt="home" className="HomeImage"/> */}
         <button onClick={createRoom} className="HomeButton"> Create Room </button>
     </div>
   )
