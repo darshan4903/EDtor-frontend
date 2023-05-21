@@ -24,12 +24,12 @@
     flex-direction: column;
 }
 .HomeTitle{
-    /* color: thistle;
+    color: thistle;
     font-size: 100px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center; */
-    /* margin-top: 100px; */
-    
+    text-align: center; 
+     /* margin-top: 100px;
+     */
 }
 .MainContainer{
     height: 100vh;
