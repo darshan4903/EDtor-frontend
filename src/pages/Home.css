@@ -1,13 +1,20 @@
 .HomeButton{
-    height: 200px;
-    width: 400px;
-    background-color: green;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(106, 99, 246);
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     padding: auto;
+    color: rgb(39, 35, 35);
     align-items: center;
     margin: auto;
-    border-radius: 10%;
+    border-radius: 4%;
+}
+.HomeButton:hover{
+
+    color: silver;
+    cursor: pointer;
 }
 .HomeContainer{
     height: 100vh;
@@ -17,9 +24,17 @@
     flex-direction: column;
 }
 .HomeTitle{
-    color: thistle;
+    /* color: thistle;
     font-size: 100px;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    margin-top: 100px;
+    text-align: center; */
+    /* margin-top: 100px; */
+    
+}
+.MainContainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
 }

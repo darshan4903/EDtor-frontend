@@ -154,14 +154,14 @@ const Room = () => {
         padding={0}
         //   fontSize={24}
         // defaultLanguage={"C++"}
-        language={lang}
+        language="javaScript"
         defaultValue="// some comment"
         theme="vs-dark"
         value={code}
         onChange={handleChange}
         options={{
           minimap: {
-            enabled: false,
+            enabled: true,
           },
         }}
       />
