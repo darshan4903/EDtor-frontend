@@ -1,6 +1,6 @@
 import axiosApiInstance from "./axiossetup";
 
-const BASE_URL = "http://localhost:8080/api/v1/";
+const BASE_URL = "https://apnaeditor.up.railway.app/api/v1/";
 
 export const get = async (url) =>{
     try{
