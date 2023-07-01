@@ -1,13 +1,11 @@
 .HomeButton{
-    height: 300px;
-    width: 300px;
+    height: 50px;
+    width: 100px;
     background-color: rgb(106, 99, 246);
-    font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     padding: auto;
     color: rgb(39, 35, 35);
-    align-items: center;
+    /* align-items: center; */
     margin: auto;
     border-radius: 4%;
 }
@@ -21,20 +19,53 @@
     width: 100vw;
     background-color: black;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .HomeTitle{
     color: thistle;
-    font-size: 100px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    line-height: .65;
+    /* margin-top: 5vh; */
+    /* text-decoration-style: wavy; */
+    /* text-indent: 50px; */
+    background-image: linear-gradient(to right,rgb(106, 99, 246) , black);
+    display: flex;
+    margin-right: 0;
+    font-family: 'Arial Black', Gadget, sans-serif;
     text-align: center; 
+    /* text-orientation: sideways-right; */
+    letter-spacing: 5px;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
      /* margin-top: 100px;
      */
+}
+.MainContainerHeading{
+    height: 10vh;
+    width: auto;
+    font-size: 3rem;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: oblique;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: gray;
 }
 .MainContainer{
     height: 100vh;
     width: 100vw;
     background-color: black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.MainContainerText{
+    color: aliceblue;
+    width: 80%;
+    margin-top:10vh;
+     margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+    font-style:oblique;
+    
 }
