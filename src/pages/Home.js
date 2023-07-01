@@ -58,9 +58,9 @@ const Home = () => {
       </div>
       
     </div>
-       <Footer/> 
+    <Footer/>
     </div>
   );
 };
 
-export default Home;
+export default Home;
