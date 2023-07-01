@@ -1,5 +1,5 @@
 
-import { FaMapMarked, FaFacebook , FaInstagram , FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaInstagram , FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 import React from 'react'
 import './Footer.css'

@@ -15,7 +15,7 @@ const Room = () => {
   const params = useParams();
   const [code, setCode] = React.useState('print(\'Hello World\');');
   const [lang, setLang] = React.useState("c++");
-  const [loading, setLoadng] = React.useState(false);
+  // const [loading, setLoadng] = React.useState(false);
   // const [def, setDef] = React.useState("");
   const [result, setResult] = React.useState("");
   const [input, setInput] = React.useState();
@@ -42,7 +42,7 @@ const Room = () => {
   };
 
   const onConnected = () => {
-    setLoadng(false);
+    // setLoadng(false);
     console.log("Connected DARSH");
     console.log(params);
     client.subscribe(`/room/${params.id}/receive`, (message) => {
@@ -162,37 +162,37 @@ const Room = () => {
             value={lang}
             onChange={(e) => {
               setLang(lowerCase(e.target.value));
-              e.target.value == 52
+              e.target.value ==='52'
                 ? setCode(
                     '// Apna Editor - Code Editor, Compiler, Interpreter \n\n#include<iostream>\nusing namespace std;\nint main() {\n  cout<<"Welcome to Online IDE!! Happy Coding :)";\n  return 0;\n}'
                   )
-                : e.target.value == 50
+                : e.target.value ==='50'
                 ? setCode(
                     '// Apna Editor - Code Editor, Compiler, Interpreter\n\n#include<stdio.h>\nint main()\n{\n    printf("Welcome to Online IDE!! Happy Coding :)");\n    return 0;\n}'
                   )
-                : e.target.value == 51 ?
+                : e.target.value ==='51' ?
                 setCode('// Apna Editor - Code Editor, Compiler, Interpreter\n\nusing System;\nclass HelloWorld {\n  static void Main() {\n    Console.WriteLine("Hello World");\n }\n}')
-                : e.target.value ==60?
+                : e.target.value ==='60'?
                 setCode('package main \nimport "fmt" \nfunc main() { \n    fmt.Println("Welcome to Online IDE!! Happy Coding :)")\n}')
-                : e.target.value == 63?
+                : e.target.value ==='63'?
                 setCode('console.log(\'Hello World\');')
-                : e.target.value == 66?
+                : e.target.value ==='66'?
                 setCode('vector = (1:1:10); \nmatrix = [vector ; vector * 5; vector * 10 ] \nmatrix(1:3, 2:4)'):
-                e.target.value == 68?
+                e.target.value ==='68'?
                 setCode('<?php \n echo "Welcome to Online IDE!! Happy Coding :)"; \n?>')
-                : e.target.value == 70?
+                : e.target.value ==='70'?
                 setCode('print(\'Welcome to Online IDE!! Happy Coding :)\')')
-                : e.target.value == 72?
+                : e.target.value ==='72'?
                 setCode('puts "Welcome to Online IDE!! Happy Coding :)"')
-                : e.target.value == 73?
+                : e.target.value ==='73'?
                 setCode('fn main() {\n    println!("Welcome to Online IDE!! Happy Coding :)");\n}')
-                : e.target.value == 74?
+                : e.target.value ==='74'?
                 setCode('console.log("Welcome to Online IDE!! Happy Coding :)")')
-                : e.target.value == 91?
+                : e.target.value ==='91'?
                 setCode('public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println("Welcome to Online IDE!! Happy Coding :)");\n    }\n}')
-                : e.target.value == 46?
+                : e.target.value ==='46'?
                 setCode('echo "Welcome to Online IDE!! Happy Coding :)"')
-                : e.target.value == 63?
+                : e.target.value ==='63'?
                 setCode('print("Welcome to Online IDE!! Happy Coding :)")')
                 : setCode(
                     '// Apna Editor - Code Editor, Compiler, Interpreter\n\n#include<iostream>\nusing namespace std;\nint main() {\n  cout<<"Welcome to Online IDE!! Happy Coding :)";\n  return 0;\n}'  
