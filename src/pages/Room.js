@@ -43,8 +43,8 @@ const Room = () => {
 
   const onConnected = () => {
     // setLoadng(false);
-    console.log("Connected DARSH");
-    console.log(params);
+    // console.log("Connected DARSH");
+    // console.log(params);
     client.subscribe(`/room/${params.id}/receive`, (message) => {
       const data = JSON.parse(message.body);
       console.log("DATA:" + data);
@@ -58,8 +58,8 @@ const Room = () => {
   };
 
   const registerRoom = async () => {
-    const Sock = SockJS("https://apnaeditor.up.railway.app/ws");
-    // const Sock = SockJS("http://localhost:8080/ws");
+   // const Sock = SockJS("https://apnaeditor.up.railway.app/ws");
+    const Sock = SockJS("http://54.89.229.68:8080/ws");
     client = over(Sock);
     await client.connect({}, onConnected, onError);
   };
@@ -103,56 +103,15 @@ const Room = () => {
         setResult(response.stdout);
       }
 
-      console.log(response);
-      console.log(response.stderr);
-      console.log(response.status.description);
+      // console.log(response);
+      // console.log(response.stderr);
+      // console.log(response.status.description);
     } catch (error) {
       alert(error.code);
     }
   };
-  // const sendFinalDetails = async () => {
-  //   try {
-  //     setStatus("Running");
-  //     let data = input;
 
-  //     let base64data = base64_encode(data);
-  //     console.log(base64data);
-  //     let response = await get(`room/res/${params.id}/${base64data}`);
-  //     if (response.stderr != null) {
-  //       setResult(response.stderr);
-  //     } 
-  //     else {
-  //       console.log(response);
-  //       // setStatus(response.status.description);
-  //       setResult( response.stdout);
-  //     }
-
-  //     console.log(response);
-  //     // console.log(response.stderr);
-  //     console.log(response.status.description);
-  //   } catch (error) {
-  //     // setStatus("Runtime Error"); 
-  //     // setResult(error.code + '\n' + error.message);
-  //     // console.log(error);
-  //     alert(error.message);
-  //   }
-  // };
   return (
-    // <div className='App'>
-
-    //    <div>Add two numbers A and B</div>
-    //    <div className='App-Head'>
-    //      <CodeMirror
-    //       value={code}
-    //        height="200px"
-    //     //    extensions={[javascript({ jsx: true })]}
-    //        theme={okaidia}
-    //        language={lang}
-    //        onChange={handleChange}
-    //      />
-    //      <div className='App-Btn' >Submit</div>
-    //    </div>
-    // </div>
     <div className="App">
       <h1>APNA EDITOR</h1>
       <div className="App-row">
@@ -198,7 +157,7 @@ const Room = () => {
                 : setCode(
                     '// Apna Editor - Code Editor, Compiler, Interpreter\n\n#include<iostream>\nusing namespace std;\nint main() {\n  cout<<"Welcome to Online IDE!! Happy Coding :)";\n  return 0;\n}'  
                   )
-
+                  sendMessage(code)
               // console.log(def)
             }}
           >

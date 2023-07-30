@@ -9,11 +9,11 @@ import Footer from "../components/Footer"
 const Home = () => {
   //  const navigate = useNavigate();
   const createRoom = async () => {
-    console.log("CREATE ROOM");
+    // console.log("CREATE ROOM");
     try {
       const response = await post("room", {});
       if (response.success) {
-        console.log(response.data);
+        // console.log(response.data);
         redirect(response.data.id);
       }
     } catch (e) {
@@ -22,7 +22,7 @@ const Home = () => {
   };
 
   function redirect(Id) {
-    console.log(Id);
+    // console.log(Id);
     window.location.href = `/room/${Id}`;
   }
   return (

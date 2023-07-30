@@ -15,7 +15,8 @@
     cursor: pointer;
 }
 .HomeContainer{
-    height: 100vh;
+    min-height: 100vh;
+    max-width: max-content;
     width: 100vw;
     background-color: black;
     display: flex;
@@ -40,6 +41,7 @@
      /* margin-top: 100px;
      */
 }
+
 .MainContainerHeading{
     height: 10vh;
     width: auto;
@@ -52,8 +54,9 @@
     color: gray;
 }
 .MainContainer{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    max-height: max-content;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -68,4 +71,51 @@
     font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
     font-style: oblique;
    
+}
+
+@media screen and (max-device-width: 480px){
+    .HomeContainer{
+        height: max-content;
+    }
+    .HomeTitle{
+        color: thistle;
+    font-size: 20px;
+    line-height: .65;
+    /* margin-top: 5vh; */
+    /* text-decoration-style: wavy; */
+    /* text-indent: 50px; */
+    background-image: linear-gradient(to right,rgb(106, 99, 246) , black);
+    display: flex;
+    margin-right: 0;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-align: center; 
+    /* text-orientation: sideways-right; */
+    letter-spacing: 5px;
+    writing-mode: vertical-rl;
+    /* text-orientation: NULL; */
+    }
+    .MainContainerHeading{
+        height: 10%;
+        width: auto;
+        font-size: 2rem;
+        margin-top: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: oblique;
+        font-family: "Arial Black", Gadget, sans-serif;
+        color: gray;
+    }
+    .MainContainerText{
+        color: aliceblue;
+        width: 70%;
+        /* overflow: hidden; */
+        height: max-content;
+        margin-top:10vh;
+         margin-left: auto;
+        margin-right: auto;
+        font-size: 1.1rem;
+        font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+        font-style: oblique;
+       
+    }
 }

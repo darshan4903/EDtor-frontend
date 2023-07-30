@@ -24,6 +24,9 @@ const Footer = () => {
             <a className='footer-a' href='mailto:expresso.nit@gmail.com'>
                         darshanj.ug20.ece@nitp.ac.in
                         </a>
+                        <a className='footer-a' href='mailto:expresso.nit@gmail.com'>
+                        divyab.ug20.ece@nitp.ac.in
+                        </a>
                     <p className='footer-p'>NIT Patna, Bihar ,India</p>
 
                         
