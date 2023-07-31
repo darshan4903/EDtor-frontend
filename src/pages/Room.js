@@ -59,7 +59,8 @@ const Room = () => {
 
   const registerRoom = async () => {
    // const Sock = SockJS("https://apnaeditor.up.railway.app/ws");
-    const Sock = SockJS("http://54.89.229.68:8080/ws");
+  //  const Sock = SockJS("http://localhost:8080/ws");
+    const Sock = SockJS("http://23.20.224.224:8080/ws");
     client = over(Sock);
     await client.connect({}, onConnected, onError);
   };
